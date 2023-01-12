@@ -24,6 +24,46 @@ body {
   letter-spacing: 2px;
   padding: 10px;
   margin: 10px;
+  margin-bottom: 2px;
+}
+
+.warning {
+  margin: 0px;
+  padding: 5px;
+  padding-left: 10px;
+  color: red;
+}
+
+.success {
+  margin: 0px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: rgb(95, 108, 224);
+  color: rgb(0, 255, 0);
+  font-weight: 600;
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.text-area-2 {
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: rgb(255, 0, 0);
+  background-color: rgb(148, 146, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 2px;
 }
 
 .btn {

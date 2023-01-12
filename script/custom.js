@@ -32,13 +32,36 @@ function showValues() {
 }
 
 $(document).ready(function() {
+    $('.warning').hide();
+    $('.success').hide();
     showValues()
 });
 
+$(document).on("keyup", function() {
+    $('.warning').hide();
+    $('#note-inp').addClass("text-area");
+    $('#note-inp').removeClass("text-area-2");
+})
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function succ_message() {
+    $('.success').show().delay(2000).fadeOut();
+}
+
 $('#sub-btn').click( function() {
     var note = $('#note-inp').val();
-    addData(note);
-    showValues()
+    if (note != ""){
+        addData(note);
+        succ_message()
+        showValues();
+    } else {
+        $('.warning').show();
+        $('#note-inp').removeClass("text-area");
+        $('#note-inp').addClass("text-area-2");
+    }
 });
 
 function addData(note) {
