@@ -55,8 +55,9 @@ $('#sub-btn').click( function() {
     var note = $('#note-inp').val();
     if (note != ""){
         addData(note);
-        succ_message()
+        succ_message();
         showValues();
+        $('#note-inp').val("");
     } else {
         $('.warning').show();
         $('#note-inp').removeClass("text-area");
